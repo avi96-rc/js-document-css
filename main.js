@@ -1,23 +1,33 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+const portfolio = [
+  { name: "mark", stock: "FB" },
+  { name: "mark", stock: "FB" },
+  { name: "steve", stock: "AAPL" },
+  { name: "tim", stock: "AAPL" },
+  { name: "steve", stock: "MSFT" },
+  { name: "bill", stock: "MSFT" },
+  { name: "bill", stock: "AAPL" },
+];
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+// shareholder = [{ stock: "aple", name: ["steve", "tim", "bill"], count: 3 }];
+
+
+
+
+const stockList = [{ ...portfolio[0], count: 1 }];
+for (let index = 1; index < portfolio.length; index++) {
+  for (let i = 0; i < stockList.length; i++) {
+    // console.log(portfolio[index].stock)
+    if (portfolio[index].stock === stockList[i].stock) {
+      console.log("true");
+      stockList[i].count += 1;
+      break;
+    }else{
+      
+    }
+  }
+}
+
+
+
+console.log(stockList)
