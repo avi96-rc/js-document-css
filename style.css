@@ -1,9 +1,10 @@
 
+
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /* Remove default margin */
@@ -107,6 +108,26 @@ select {
 
 body{
   font-family: var(--ff-primary);
+  color: var(--clr-txt-primary);
+}
+
+
+header{
+  color: var(--clr-heading);
+  font-size: var(--fs-header);
+}
+
+/* navigation */
+#navbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* background-color: whitesmoke; */
+  width: 300px;
+  min-width: 290px;
+  height: 100%;
+  
+  border-right: solid 0.2rem rgba(0, 22, 22, 0.4);
 }
 
 
@@ -205,14 +226,28 @@ section a{
 @media only screen and (max-width:700px) {
 
   #navbar{
-    display: none;
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: 1
+    
     
   }
 
-  #main-doc{
-  position:static
+  #navbar ul{
+    height: 50%;
   }
-  
+
+  #main-doc{
+  position:relative;
+  left:0;
+  top: 270px;
+  }
+
+ 
+section article{
+  margin:15px 0;
 }
 
-/* this is latest branch */
+  
+}
