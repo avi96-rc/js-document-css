@@ -235,13 +235,14 @@ section a{
   }
 
   #navbar ul{
-    height: 50%;
+    height: 40vh;
   }
 
   #main-doc{
   position:relative;
   left:0;
-  top: 270px;
+  top: 45vh;
+  margin-top: 20px;
   }
 
  
