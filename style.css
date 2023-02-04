@@ -111,3 +111,25 @@ body{
 
 
 
+
+section a{
+  text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width:700px) {
+
+  #navbar{
+    display: none;
+    
+  }
+
+  #main-doc{
+  position:static
+  }
+  
+}
+
+/* latest */
+
