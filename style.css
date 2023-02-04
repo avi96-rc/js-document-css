@@ -111,6 +111,27 @@ body{
 
 
 
+
+header{
+  color: var(--clr-heading);
+  font-size: var(--fs-header);
+}
+
+/* navigation */
+#navbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* background-color: whitesmoke; */
+  width: 300px;
+  min-width: 290px;
+  height: 100%;
+  
+  border-right: solid 0.2rem rgba(0, 22, 22, 0.4);
+}
+
+
+
 #navbar header{
  margin: 10px;
  text-align: center;
@@ -194,4 +215,4 @@ section a{
   
 }
 
-/* latest */
+/* this is latest branch */
